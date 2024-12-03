@@ -5,7 +5,7 @@ C = [0 0 1];
 D = 0;
 
 % Convert state-space to transfer function
-system1 = ss2tf(A, B, C, D);
+[num, den]  = ss2tf(A, B, C, D);
 
 % Display transfer function
 tf_sys = tf(num, den);
